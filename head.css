@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Reenie+Beanie&display=swap');
+
+html {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input[type="text"],input[type="password"],select, textarea {
+    height: 30px;
+    border:  1px solid #999;
+    padding-left: 7px;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus,textarea:focus,select:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgb(111, 166, 255);
+    box-sizing: border-box;
+}
+
+input[type="submit"],input[type="button"] {
+    border-radius: 5px;
+    border:  1px solid #999;
+    cursor: pointer;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.con {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+.pageList {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.pageList>ul {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.pageList>ul>li {
+    float: left;
+}
+
+.pageList>ul>li>a {
+    display: block;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.current {
+    font-size: 16px;
+    color: rgb(111, 166, 255);
+}
+
+#header>.Wrapper {
+    position: relative;
+}
+
+#header>.Wrapper>.logo {
+    font-size: 60px;
+    letter-spacing: 2px;
+    float: left;
+    line-height: 150px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+#header>.Wrapper>.nav {
+    float: right;
+}
+
+#header>.Wrapper>.nav>li {
+    float: left;
+}
+
+#header>.Wrapper>.nav>li>a {
+    display: block;
+    padding: 10px 14px;
+    box-sizing: border-box;
+}
+
+#header>.Wrapper>.nameBox {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+
+#header>.Wrapper>.nameBox span {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#header>.gnb {
+    border-radius: 5px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    margin: 20px auto;
+}
+
+#header>.gnb>li {
+    float: left;
+}
+
+#header>.gnb>li>a {
+    display: block;
+    box-sizing: border-box;
+    padding: 14px 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+#header>.gnb>.portfolio {
+
+}
+
+#header>.gnb>li>a:hover {
+    background-color: #aaa;
+}
+
+
+/* -------------------------------------------------------- */
+
+
+#articles {
+    position: relative;
+}
+
+#articles>.search-Box {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+#articles>.search-Box>.search-input {
+    width: 50%;
+    height: 24px;
+}
+
+#articles>.search-Box>.search-submit {
+    width: 15%;
+    height: 24px;
+}
+
+#articles>.search-Box>span {
+    color: #aaa;
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+
+#articles>span {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#articles>ul>li {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #888;
+}
+
+#articles>ul>li:last-child {
+    border: none;
+}
+
+.article-head {
+    margin: 20px auto;
+}
+
+#articles>.article-head>li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#articles>.article-body>li {
+    margin: 4px auto;
+}
+
+#articles>.article-body>li form {
+    display: inline-block;
+}
+
+#articles>.article-body>li span {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#articles>.article-body>li span.noCount {
+    color: #ccc;
+    font-size: 12px;
+}
+
+#articles>.article-body>li span.done>i {
+    color: rgb(228, 48, 78);
+}
+ 
+.detail-Box>ul>li {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #888;
+}
+
+.detail-Box>ul>li:last-child {
+    border: none;
+}
+
+.article-head {
+    margin: 20px auto;
+}
+
+.detail-Box>.article-head {
+    padding: 50px 0;
+    border-bottom: 1px solid #444;
+}
+
+.detail-Box>.article-head>li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detail-Box>.detail-body {
+    box-sizing: border-box;
+    padding: 5% 10%;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+}
+
+#replyBox {
+    padding-top: 50px;
+}
+
+#replyBox>h2 {
+    padding: 20px;
+}
+
+#replyBox>form {
+    width: 90%;
+    margin: 10px auto 50px;
+    height: 40px;
+}
+
+#replyBox>form>textarea {
+    width: 85%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 2px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#replyBox>form>input {
+    display: block;
+    width: 8%;
+    margin-left: 4%;
+    height: 100%;
+    float: left;
+    outline: none;
+}
+
+#replyBox>.replies {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#replyBox>.replies>p {
+    padding: 30px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+#replyBox>.replies>ul>li {
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #888;
+}
+
+#replyBox>.replies>ul>li:last-child {
+    border: none;
+}
+
+#replyBox>.replies>.reply-head {
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+#replyBox>.replies>.reply-head>li {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#replyBox>.replies>.reply-body {
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+}
+
+
+#replyBox>.replies>.reply-body>li:first-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#replyBox>.replies>.reply-body>li {
+    font-size: 14px;
+}
+
+
+/* ================================================================= */
+
+#write-form input[type="text"],textarea,select {
+    display: block;
+    width: 50%;
+}
+
+#write-form textarea {
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+#write-form input[type="button"] {
+    display: inline-block;
+}
+
+#createChatRoom input[type="button"] {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin-right: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#createChatRoom input {
+    width: 25%;
+    height: 20px;
+}
+
+.left {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.right {
+    float: right;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.left>div, .right>div {
+    height: 50px;
+}
+
+#write-form .loginId {
+    display: inline-block;
+}
+
+#write-form #idCheck {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.idCheckText {
+    box-sizing: border-box;
+    padding-left: 7px;
+    font-size : 12px;
+    font-weight: bold;
+}
+
+/* ======================================== */
+
+.chat-page {
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.chat-page>#chat-room {
+    height: 89%;
+    position: relative;
+    overflow-y: scroll;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+    border:  1px solid #999;
+    border-radius: 10px;
+}
+
+.chat-page>#chat-room::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.chat-page>#chat-room::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+}
+
+.chat-page>#chat-room::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #888;
+}
+
+.chat-page>#chat-room>.message-box {
+    height: 100%;
+}
+
+.chat-page>#chat-room>.message-box>.message-group {
+    height: 100%;
+}
+
+.chat-page>#chat-room>.message-box>.message-group>.other {
+    width: 100%;
+    float: left;
+    margin: 10px auto;
+}
+
+.chat-page>#chat-room>.message-box>.message-group>.mine {
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin: 10px auto;
+}
+
+.chat-page>#chat-room>.message-box>.message-group>.chat-message .name {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.chat-page>#chat-room>.message-box>.message-group>.chat-message .date {
+    font-size: 14px;
+}
+.chat-page>#chat-room>.message-box>.message-group>.chat-message>.body {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline:none;
+    background: #ddd;
+}
+
+.chat-page >.input-box {
+    width: 100%;
+    height: 10%;
+    border:  1px solid #999;
+    border-radius: 10px;
+}
+
+.chat-page >.input-box>form {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.chat-page >.input-box>form>input {
+    height: 100%;
+    display: block;
+    float: left;
+    font-size: 20px;
+}
+
+.chat-page >.input-box>form input[type="text"] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+.chat-page >.input-box>form input[type="submit"] {
+    width: 10%;
+    background-color: #6884b3;
+    box-shadow: 1px 1px 1px #555;
+    color: #fff;
+    border-radius: 8px;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+}
+

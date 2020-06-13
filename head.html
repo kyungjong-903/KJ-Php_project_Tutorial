@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="head.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Reenie+Beanie&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="Wrapper con after">
+            <div class="logo">
+                <a href="#">KYUNG JONG</a>
+            </div>
+            <ul class="nav after">
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+            <form action="" class="search-Box">
+                <input type="text" class="search-input" placeholder="게시물을 검색하세요.">
+                <input type="submit" class="search-submit" value="검색">
+            </form>
+        </div>
+        <ul class="gnb con after">
+            <li><a href="#">asdasd</a></li>
+            <li><a href="#">asdasd</a></li>
+            <li><a href="#">asdasd</a></li>
+            <li><a href="#">asdasd</a></li>
+            <li><a href="#">asdasd</a></li>
+        </ul>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+
+
+    <div id="articles" class="con">
+        <ul class="article-head after">
+            <li style="width: 10%;">글</li>
+            <li style="width: 40%;">
+                <a href="#">제목</a>
+            </li>
+            <li style="width: 15%;">작성자</li>
+            <li style="width: 10%;">등록일</li>
+            <li style="width: 10%;">조회수</li>
+            <li style="width: 15%;">비고</li>
+        </ul>
+        <ul class="article-body after">
+            <li style="width: 10%;">글</li>
+            <li style="width: 40%; text-align: left; padding-left: 20px;">
+                <a href="#">제목</a>
+            </li>
+            <li style="width: 15%;">작성자</li>
+            <li style="width: 10%;">등록일</li>
+            <li style="width: 10%;">조회수</li>
+            <li style="width: 15%;">비고</li>
+        </ul>
+        <ul class="article-body after">
+            <li style="width: 10%;">글</li>
+            <li style="width: 40%; text-align: left; padding-left: 20px;">
+                <a href="#">제목</a>
+            </li>
+            <li style="width: 15%;">작성자</li>
+            <li style="width: 10%;">등록일</li>
+            <li style="width: 10%;">조회수</li>
+            <li style="width: 15%;">비고</li>
+        </ul>
+        <ul class="article-body after">
+            <li style="width: 10%;">글</li>
+            <li style="width: 40%; text-align: left; padding-left: 20px;">
+                <a href="#">제목</a>
+            </li>
+            <li style="width: 15%;">작성자</li>
+            <li style="width: 10%;">등록일</li>
+            <li style="width: 10%;">조회수</li>
+            <li style="width: 15%;">비고</li>
+        </ul>
+    </div>
+    <!-- 디테일 박스========================================= -->
+    <div class="detail-Box con">
+        <ul class="article-head after">
+            <li style="width: 10%;">글</li>
+            <li style="width: 40%;">
+                <a href="#">제목</a>
+            </li>
+            <li style="width: 15%;">작성자</li>
+            <li style="width: 10%;">등록일</li>
+            <li style="width: 10%;">조회수</li>
+            <li style="width: 15%;">비고</li>
+        </ul>
+        <div class="detail-body">
+            asdasdasdasdasd
+        </div>
+    </div>
+    <!-- WRITE FORM asdasd+++++++++++++++++++++++++++++++++++++++ -->
+    <div id="write-form" class="con">
+        <form action="./doWrite" method="POST" class="after">
+            <div class="left">
+                <div>게시판선택</div>
+                <div>제목</div>
+                <div>내용</div>
+                <div>작성</div>
+            </div>
+            <div class="right">
+                <div><select name="boardId">
+                        <option value="2">자유</option>
+                        <option value="1">공지</option>
+                    </select></div>
+                <div><input type="text" name="title"></div>
+                <div><textarea name="body"></textarea></div>
+                <div><input type="button" value="작성"></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
